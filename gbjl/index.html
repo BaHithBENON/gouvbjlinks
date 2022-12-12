@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GBL | Gouv BJ Links</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Swiper slider-->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,800&amp;display=swap">
+    <!-- Device Mockup-->
+    <link rel="stylesheet" href="css/device-mockups.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/app_logo_off.png">
+  </head>
+  <body>
+    <section class="hero bg-top py-0" id="hero" style="background: url(img/banner-4.png) no-repeat; background-size: 100% 80%">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-lg-5 py-5">
+            <h1>Gouv BJ Links...</h1>
+            <p class="my-3 h6 text-success">Tous vos liens en un seul lieu.</p>
+            <p class="my-2 mb-5 text-bold">Gouv BJ Links est une application qui donne les accès aux différents sites et applications du gouvenerment béninois 
+              et ses affiliations dans le but d'aider les utilisateurs à se retrouver dans leurs recherches quotidiennes.</p>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mb-2 mb-lg-0"><a class="btn btn-success btn-lg px-4" href="#!"> <i class="fab fa-google-play me-3"></i>Google Play</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <div class="device-wrapper mx-auto">
+              <div class="device shadow" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                <div class="screen"><img class="img-fluid" src="img/mobile.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-0" id="testimonials" style="background: url(img/testimonials-bg.png) no-repeat; background-size: 40% 100%; background-position: left center">
+      <div class="container text-center">
+        <h2 class="mb-5">Soutenez les développeurs</h2>
+        <div class="row">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mb-2 mb-lg-0"><a class="btn btn-danger btn-lg px-4" href="#!">Buy Me A Coffee</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  
+    <a class="scroll-top-btn" id="scrollTop" href="#!"><i class="fas fa-long-arrow-alt-up"></i></a>
+    <footer class="with-pattern-1 position-relative pt-5">
+      <div class="container py-5">
+        <div class="row gy-4">
+          <div class="col-lg-4"><img class="mb-0" src="img/app_logo_off.png" alt="" width="110">
+            <p class="text-bold h6">Tous vos liens réunis.</p>
+          </div>
+          <div class="col-lg-4">
+            <h2 class="h5 mb-4">Liens rapides</h2>
+            <div class="d-flex">
+              <ul class="list-unstyled d-inline-block me-4 mb-0">
+                <li class="mb-2"><a class="footer-link" href="privacy.html">Politique de confidentialité</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h2 class="h5 mb-4">Contacts Infos</h2>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights">       
+        <div class="container text-center py-4">
+          <p class="mb-0 text-bold text-sm">&copy; 2023, Fait par <a href="https://bootstrapious.com/p/app-landing-page" class=" text-success">Ba'Hith BN</a>.</p>
+          <!-- If you want to remove the backlink, please purchase the Attribution-Free License. See details in readme.txt or license.txt. Thanks!-->
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="js/front.js"></script>
+    <script>
+      // ------------------------------------------------------- //
+      //   Inject SVG Sprite - 
+      //   see more here 
+      //   https://css-tricks.com/ajaxing-svg-sprite/
+      // ------------------------------------------------------ //
+      function injectSvgSprite(path) {
+      
+          var ajax = new XMLHttpRequest();
+          ajax.open("GET", path, true);
+          ajax.send();
+          ajax.onload = function(e) {
+          var div = document.createElement("div");
+          div.className = 'd-none';
+          div.innerHTML = ajax.responseText;
+          document.body.insertBefore(div, document.body.childNodes[0]);
+          }
+      }
+      // this is set to BootstrapTemple website as you cannot 
+      // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+      // while using file:// protocol
+      // pls don't forget to change to your domain :)
+      injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
+      
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" 
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
+      crossorigin="anonymous">
+  </body>
+</html>
