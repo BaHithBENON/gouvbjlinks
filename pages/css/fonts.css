@@ -183,3 +183,10 @@
   font-style: normal;
   font-weight: normal;
 }
+
+@font-face {
+  font-family: "SpaceMono";
+  src: url("../css/font-awesome/fonts/SpaceMono-Bold.ttf")  format("ttf");
+  font-style: normal;
+  font-weight: normal;
+}
